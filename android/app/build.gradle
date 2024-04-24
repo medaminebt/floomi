@@ -91,7 +91,7 @@ android {
             signingConfig signingConfigs.debug
             // THIS IS IF YOU WANT TO PUBLISH Your App on the PlayStore then do this :
             minifyEnabled false
-            shrinkResources true
+            //shrinkResources true
             //useProguard true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
