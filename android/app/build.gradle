@@ -90,7 +90,7 @@ android {
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig signingConfigs.debug
             // THIS IS IF YOU WANT TO PUBLISH Your App on the PlayStore then do this :
-            minifyEnabled true
+            minifyEnabled false
             useProguard true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
