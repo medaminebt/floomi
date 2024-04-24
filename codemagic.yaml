@@ -1,0 +1,18 @@
+workflows:
+  my-workflow:
+    environment:
+      flutter: stable
+      java: 11
+    scripts:
+      - name: Install dependencies
+        script: flutter pub get
+      - name: Build APK
+        script: flutter build apk
+    artifacts:
+      - build/app/outputs/apk/release/*.apk
+    publishing:
+      email:
+        recipients:
+          - vmwarereporting@gmail.com
+          - ameenbt345@gmail.com
+          - aymen.kefi@gmail.com
